@@ -30,7 +30,7 @@ matrix:
   - os: linux
     env: NODE_VERSION=6.9 CC=gcc-4.8 CXX=g++-4.8
   - os: osx
-    env: NODE_VERSION=6.9 CC=clang CXX=clang++
+    env: NODE_VERSION=6.9 CC=clang CXX=clang++ APPLE_CODESIGN_KEY_PASSWORD=""
 
 install:
 - git clone https://github.com/creationix/nvm.git /tmp/.nvm
